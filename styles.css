@@ -1,0 +1,86 @@
+h2,h3{
+    color: blueviolet;
+}
+.hr1{
+    border-top: 5px dashed rgb(90, 79, 141);
+}
+.box{
+    background: rgb(92, 213, 218);
+    border: 2px solid rgb(70, 83, 9);
+    margin: 10px;
+}
+
+.parent {
+    background: rgb(192, 142, 142);
+    border: 2px solid rgb(70, 83, 9);
+}
+
+.fifty-percent {
+    width: 50%;
+}
+
+.one-hundred {
+    width: 100px;
+}
+
+.parent {
+    width: 250px;
+    ;
+}
+.fifty-vw {
+    width: 50vw;
+}
+
+.twenty-five-vh {
+    height: 25vh;
+}
+.one-rem {
+    font-size: 1rem;
+}
+
+.one-em {
+    font-size: 1em;
+}
+
+.two-rem {
+    font-size: 2rem;
+}
+
+.two-em {
+    font-size: 2em;
+}
+div>p{
+   background-color: rgb(201, 186, 216); 
+}
+div+p{
+    color: rgb(209, 81, 81);
+}
+h4 ~ ul {
+    background: #be58a5;
+  }
+.t2{
+    height: 300px;
+    width: 300px;
+  }
+.t1:hover{
+    
+    transform: rotate(90deg);
+}
+.t3:hover{
+    transform: translate(50px, 100px);
+}
+.t4:hover{
+    transform: skew(20deg,10deg);
+}
+.t6{
+    width: 100px;
+    height: 100px;
+    background:#be58a5;
+    transition: width 2s, height 4s;
+  }
+  
+  .transitions:hover {
+    width: 300px;
+    height: 300px;
+  }
+  

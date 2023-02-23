@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h2>1. Demo specifying the difference between %,rem,em,vh,vw,px.</h2>
+    
+    <h3>Demo for px and %</h3>
+    <div class="box fifty-percent">50%</div>
+    <div class="box one-hundred">100px</div>
+    <hr>
+    <p>The inner content will be adjusted in terms of size with respect to its div element</p>
+    <div class="parent">
+        <div class="box fifty-percent">50%</div>
+        <div class="box one-hundred">100px</div>
+    </div>
+
+    <hr class="hr1">
+
+    <h3>Demo for vw and vh</h3>
+    <div class="box fifty-percent">50%</div>
+    <div class="box fifty-vw">50vw</div>
+    <div class="box twenty-five-vh">25vh</div>
+    <hr>
+    <div class="parent">
+        <div class="box fifty-percent">50%</div>
+        <div class="box fifty-vw">50vw</div>
+        <div class="box twenty-five-vh">25vh</div>
+    </div>
+
+    <hr class="hr1">
+
+    <h3>Demo for em and rem</h3>
+    <div class="one-rem">1rem</div>
+    <div class="one-em">1em</div>
+    <div class="two-rem">2rem</div>
+    <div class="two-em">2em</div>
+    <hr>
+    <div class="parent">
+        <div class="one-rem">1rem</div>
+        <div class="one-em">1em</div>
+        <div class="two-rem">2rem</div>
+        <div class="two-em">2em</div>
+    </div>
+    <hr class="hr1">
+
+    <h2>3. Demo specifying difference between css combinators (>,+,~) </h2>
+    <div>
+            <p>div > p selects all p elements where the parent is a div element just like it gave the background color to this p element only</p>
+    </div>
+    <p> this is outside the above div element so it doesnt get the background color as the above one but this one is after the div element so div+p will have affect on this one </p>
+
+    <div>This is the second div and will have affect on the next p element if doe using div+p</div>
+
+    <p>div + p selects the first p element that are placed immediately after div elements</p>
+    <p>p ~ ul selects every ul element that are preceded by a h4 element </p>
+    this ul is not preceeded byh4 so the css is not applied here.
+    <ul>
+        <li>Computer</li>
+        <li>Phone</li>
+    </ul>
+
+    <h4>The first paragraph.</h4>
+    <ul>
+        <li>Computer</li>
+        <li>Phone</li>
+    </ul>
+
+    <h4>Another list</h4>
+    <ul>
+        <li>Computer</li>
+        <li>Phone</li>
+    </ul>
+    <hr class="hr1">
+    <h2>Demo for css transform</h2>
+    <div>Hover over the image to rotate it by 90 degree <img src="lion.jpg" alt="lion" class="t1 t2"></div>
+    
+    <div>Hover over the image to translate <img src="lion.jpg" alt="lion" class="t3 t2"></div>
+    
+    <div>Hover over the image to scale it <img src="lion.jpg" alt="lion" class="t4 t2"></div>
+    <hr class="hr1">
+    <h2>Demo for css transition</h2>
+    <div class="transitions t6"></div>
+</body>
+</html>
